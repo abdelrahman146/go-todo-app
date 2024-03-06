@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <title>{{ .title }}</title>
+</head>
+<body>
+    <h1>{{ .title }}</h1>
+
+    <h2>API Endpoints</h2>
+
+    <section>
+        <h3>Create Todo</h3>
+        <p><strong>Endpoint:</strong> POST /todos</p>
+        <p><strong>Description:</strong> Creates a new todo item.</p>
+        <p><strong>Request Body:</strong> JSON object containing the todo item's title and status.</p>
+        <p><strong>Response:</strong> JSON object with the newly created todo item.</p>
+    </section>
+
+    <section>
+        <h3>Fetch All Todos</h3>
+        <p><strong>Endpoint:</strong> GET /todos</p>
+        <p><strong>Description:</strong> Retrieves all todo items.</p>
+        <p><strong>Response:</strong> JSON array of all todo items.</p>
+    </section>
+
+    <section>
+        <h3>Fetch Single Todo</h3>
+        <p><strong>Endpoint:</strong> GET /todos/:id</p>
+        <p><strong>Description:</strong> Retrieves a single todo item based on its ID.</p>
+        <p><strong>Response:</strong> JSON object of the requested todo item.</p>
+    </section>
+
+    <section>
+        <h3>Update Todo</h3>
+        <p><strong>Endpoint:</strong> PUT /todos/:id</p>
+        <p><strong>Description:</strong> Updates the details of an existing todo item.</p>
+        <p><strong>Request Body:</strong> JSON object containing the updated title and/or status.</p>
+        <p><strong>Response:</strong> JSON object with the updated todo item.</p>
+    </section>
+
+    <section>
+        <h3>Delete Todo</h3>
+        <p><strong>Endpoint:</strong> DELETE /todos/:id</p>
+        <p><strong>Description:</strong> Deletes a todo item based on its ID.</p>
+        <p><strong>Response:</strong> Confirmation message.</p>
+    </section>
+
+    <!-- Add sections for MarkAsDone, MarkAsUndone, and DeleteAllTodos -->
+
+    <section>
+        <h3>Mark Todo as Done</h3>
+        <p><strong>Endpoint:</strong> PUT /todos/:id/mark-done</p>
+        <p><strong>Description:</strong> Marks a todo item as done.</p>
+        <p><strong>Response:</strong> JSON object with the updated todo item.</p>
+    </section>
+
+    <section>
+        <h3>Mark Todo as Undone</h3>
+        <p><strong>Endpoint:</strong> PUT /todos/:id/mark-udone</p>
+        <p><strong>Description:</strong> Marks a todo item as undone.</p>
+        <p><strong>Response:</strong> JSON object with the updated todo item.</p>
+    </section>
+
+    <section>
+        <h3>Delete All Todos</h3>
+        <p><strong>Endpoint:</strong> DELETE /todos</p>
+        <p><strong>Description:</strong> Deletes all todo items.</p>
+        <p><strong>Response:</strong> Confirmation message.</p>
+    </section>
+
+</body>
+</html>
